@@ -15,12 +15,10 @@ sendbutton.addEventListener('click', function (e) {
     let arrValue = [card.value, cvc.value, amount.value, nombre.value, lastname.value, city.value, postalCode.value, floatingTextarea2.value];
     for (let i = 0; i < arrValue.length; i++) {
         if (arrValue[i] == "") {
-            console.log("hola1");
             arr[i].classList.add("bg-danger", "bg-opacity-25");
         }
     }for (let i=0; i < arrValue.length; i++){
         if (arrValue[i] !== ""){
-            console.log("hola2");
             arr[i].classList.remove("bg-danger", "bg-opacity-25");
         }
     }
