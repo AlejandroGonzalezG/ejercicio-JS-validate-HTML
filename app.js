@@ -16,10 +16,16 @@ sendbutton.addEventListener('click', function (e) {
     for (let i = 0; i < arrValue.length; i++) {
         if (arrValue[i] == "") {
             arr[i].classList.add("bg-danger", "bg-opacity-25");
+            element = document.getElementById("alertMissing");
+            element.style.display = "inline";
+
         }
     }for (let i=0; i < arrValue.length; i++){
         if (arrValue[i] !== ""){
             arr[i].classList.remove("bg-danger", "bg-opacity-25");
+            element = document.getElementById("alertMissing");
+            element.style.display = "none";
         }
     }
 })
+ 
